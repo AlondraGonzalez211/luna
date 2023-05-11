@@ -1,17 +1,23 @@
+  /* importing google font */
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
+    /* sets up sizing for navbar*/
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
+    /* comment out first one for light mode page background, comment out the second one for light mode page background*/
     /* background-color: #424549; */
     background-color: white;
 }
   .navbar{
+    /* comment out the first one for light mode for navbar, comment out the second one for dark mode on the nav bar*/
     /* background: #1e2124; */
     background: #f1f1f1;
+    /* defining font */
     font-family: Roboto;
+    /* defining resizing so navbar stays on top */
     height: 60px;
     padding: 0.5rem calc((100vw - 1200px)/2);
     display: flex;
@@ -21,19 +27,28 @@ body{
 }
 
 .navbar_logo{
+    /* this only applies to the logo, mostly sizing */
     text-decoration: none;
     padding-left: 1rem;
     font-size: 1.5rem;   
 }
 
 .navbar_link{
+    /* this is to change the color of the icons/links */
+    /* comment out the first one if you want to use dark mode, comment out the second one if you want to use light mode */
     color: #1e2124;
     /* color: white; */
+
+    /* this is just sizing for icons*/
     text-decoration: none;
     padding: 0rem 1rem;
 }
 
 .logoo{
+    /* this is sizing for the image itself, I added 2 paddings towards the end since they work best for one of the logos*/
+    /* You can see which looks better based on the mode you want */
+    /* comment out the first padding-top and use the last 2 paddings to see which is better, you can experiment with it to see what 
+    looks better for the icon, width and height are good */
     width: 68px;
     height: 70px;
     padding-top: 3px;
