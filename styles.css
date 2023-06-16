@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     /* comment out first one for light mode page background, comment out the second one for light mode page background*/
@@ -55,3 +56,155 @@ body{
     /* padding-top: 10px; */
     /* padding-right: 100px; */
 }
+
+/* start of footer section */
+/* sets the size for the footer to be in the middle using a container */
+.footercontainer{
+	max-width: 1170px;
+	margin:auto;
+}
+/* helps with moving the rows around so they are next to each other */
+.rowfooter{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer{
+  /* footer to change the size, padding, */
+  margin:0;
+	padding:0;
+	box-sizing: border-box;    
+  padding: 50px 0;
+  margin-top: 1px;
+  margin-left: 80px;
+  margin-bottom: -100px;
+}
+/* helps with sizing and color */
+.site-footer{
+  /* use this color for darkmode */
+  /* background-color:#1e2124; */
+  /* use this color for lightmode */
+  background-color: #f1f1f1;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  /* keeps footer at the bottom of the page */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* this is for the line that is before the copyright */
+.site-footer hr{
+  border-top-color:#bbb;
+  opacity:0.5;
+}
+/* this edits the words in the columns */
+.site-footer h6{ 
+  /* use for lightmode */
+  color: black;
+  /* use for darkmode */
+  /* color:#fff; */
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  margin-right: 200px;
+}
+/* used to move columns */
+.footer-links{
+  padding-left:0;
+  /* edit */
+  margin-right: 100px;
+  list-style:none;
+}
+/* changes color of the links to white, text decoration to not underline*/
+.footer-links a{
+  /* use for darkmode */
+  /* color: white; */
+  /* use for lightmode */
+  color: black;
+  text-decoration: none;
+}
+/* when hovered, link is red and text is underlined */
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+  color: red;
+  text-decoration: underline;
+}
+/* code for social media icons */
+.site-footer .social-icons a{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  /* use for dark mode */
+  /* background-color:#33353d; */
+  /* use for light mode */
+  background-color: #d9dbde;
+}
+/* code for copyright text, may not be needed */
+.copyright-text{
+  margin:0;
+}
+/* this is mostly for social media icon positioning */
+.social-icons{
+  padding-left:0;
+  margin-bottom:0;
+  margin-top: -60px;
+  margin-left: 500px;
+  list-style:none;
+}
+/* this aligns the icons to be next to each other instead of on top */
+.social-icons li{
+  display:inline-block;
+  margin-bottom:4px;
+}
+/* icon sizing and other for the bubbles */
+.social-icons a{
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear;
+}
+/* for icons */
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  color:#fff;
+  /* background-color:#29aafe; */
+}
+/* color for facebook */
+.social-icons a.facebook:hover{
+  background-color:#3b5998;
+}
+/* color for twitter */
+.social-icons a.twitter:hover{
+  background-color:#00aced;
+}
+/* color for linkedin */
+.social-icons a.linkedin:hover{
+  background-color:#007bb6;
+}
+/* color for instagram */
+.social-icons a.instagram:hover{
+  background-color:#ea4c89;
+}
+/* color for youtube */
+.social-icons a.youtube:hover{
+  background-color: red;
+}
+/* used to edit image */
+.logoo2{
+    height: 45px;
+    padding-right: 80px;
+    margin-left: -100px;
+}
+/* end footer */
